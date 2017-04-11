@@ -21,7 +21,7 @@ var requestOrder = (success, fail) => {
           total_fee : wx.getStorageSync('rewardNum')*100,
           notify_url : "https://www.haowen.mobi/",
           trade_type : "JSAPI",
-          openid : openID
+          openId : openID
 
       },
       method: 'POST',

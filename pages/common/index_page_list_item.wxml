@@ -45,14 +45,20 @@
            
             </view>
 
-            <view class="like_wrap">
+
+
             </view>
+                <!--<view class="like_wrap">
 <view class="ctrls">
-                    <text class='{{ item.is_liked == 1 ? "like" : "not-like" }}' bindtap='bindLike' data-index='{{ index }}'>{{ item.reward }}</text>
-                    
-         </view>
-            </view>
-             
+                    <text class="like_number" bindtap='bindLike' data-index='{{ index }}'>
+          <image class="like_image" src="../../images/my_account_on.png"></image>          
+                    {{ item.reward }}</text>      
+         </view>-->
+
+         <view class="like_wrap" bindtap='bindLike' data-index='{{ index }}'><image class="like_image" src="../../images/index_icon_dianzan@2x.png"></image><text class="like_number" >34{{item.popularity}}</text></view>
+         
+         <view class="border_tab_index_white"></view>
+            <!--</view>-->
             <view class="interval_inder"/>
             
     
