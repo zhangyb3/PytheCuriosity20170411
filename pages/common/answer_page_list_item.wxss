@@ -1,0 +1,231 @@
+
+.list_item{
+
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    
+    /*margin-top: 2px;*/
+    /*margin-bottom: 2px;*/
+    margin-left: 2px;
+    margin-right: 2px;
+    height: 300rpx;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /*justify-content: center;*/
+}
+
+.question_wrapper{
+    display: flex;
+    /*align-content: center;*/
+    justify-content: center;
+    height: 80px;
+    /*text-align: left;*/
+    /*margin-left: -10px;*/
+    width: 100%;
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+
+.question_content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    margin-top: 20rpx;
+    width: 100%;
+    text-align: left;
+    /*margin-left: 20px;*/
+    /*text-align: center;*/
+    height: 80px;
+    font-size: 28rpx;
+    color: #333333;
+    /*margin-left: 10px;*/
+}
+
+.dotted_line{
+    
+    border-bottom: 1px dashed #A9A9A9; 
+}
+
+.answer_container {
+    /*padding: 8px;*/
+    display: flex;
+    flex-direction: column;
+    /*border-top: 1px solid #EEE;*/
+    /*border-bottom: 1px solid #EEE;*/
+    
+}
+
+.answer_wrapper {
+    /*padding: 8px;*/
+    display: flex;
+    flex-direction: row;
+    /*border-top: 1px solid #EEE;*/
+    /*border-bottom: 1px solid #EEE;*/
+    height: 20px;
+}
+
+
+
+.lines {
+    
+    font-size: 18px;
+    height: 100px;
+
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+
+.questioner_info_wrap{
+    display: flex;
+    flex-direction: row;
+    height: 70rpx;
+    width: 100%;
+    justify-content: flex-start;
+    /*background-color: yellow;*/
+}
+
+.teacher_name {
+    display: flex;
+    /*width: 100%;*/
+    color: #999999;
+    font-size: 28rpx;
+    /*margin-bottom: 0;*/
+    width: auto;
+    /*height: auto;*/
+    line-height: 70rpx;
+    margin-left: 10rpx;
+}
+
+.questioner_info_wrap>image {
+    /*padding-left: 10px;*/
+    margin-left: 27rpx;
+    width: 60rpx;
+    height: 60rpx;
+    
+    border-radius: 50%;
+    background-size: contain;
+}
+
+
+/* likes and fav */
+
+.ctrls {
+    display: flex;
+    flex-direction: row;
+    
+    margin-right: 5px;
+    /*border-bottom: 1px solid #EEE;*/
+}
+
+.ctrls>text {
+    width: 100%;
+    
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    color: #A9A9A9;
+}
+
+.ctrls>text:not(:first-child) {
+    margin-right: 10px;
+    border-left: 1px solid #EEE;
+}
+
+.ctrls>text:before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+    position: relative;
+    bottom: 1px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+
+/* not like */
+
+.ctrls>.not-like:before {
+    background-image: url(http://wx.wg-global.com/Public/images/_gwlbzq_icon.png);
+    background-size: 18px;
+}
+
+
+/* liked */
+
+.ctrls>.like:before {
+    background-image: url(http://wx.wg-global.com/Public/images/_gwlbzh_icon.png);
+    background-size: 18px;
+}
+
+
+/* fav */
+
+.ctrls>.fav:before {
+    background-image: url(http://wx.wg-global.com/Public/images/gwlbsch_icon.png);
+    background-size: 18px;
+}
+
+
+/* not-fav */
+
+.ctrls>.not-fav:before {
+    background-image: url(http://wx.wg-global.com/Public/images/gwlbscq_icon.png);
+    background-size: 18px;
+}
+
+
+/* new */
+
+.isnew {
+    position: relative;
+    overflow: hidden;
+}
+
+.isnew:before {
+    content: '新人报到';
+    display: block;
+    padding: 12rpx 60rpx;
+    position: absolute;
+    background-color: #F5C51E;
+    color: #FFF;
+    top: 10px;
+    left: -35px;
+    font-size: 30rpx;
+    transform: rotate(-45deg);
+}
+
+.isnew:after {
+    content: attr(data-dt);
+    color: #E1635A;
+    position: absolute;
+    font-size: 28rpx;
+    width: 75px;
+    top: 55px;
+    right: 20px;
+    padding: 4px;
+    transform: rotate(-15deg);
+    background: url(http://wx.wg-global.com/Public/images/gwlbsjyz_icon.png) no-repeat;
+    background-size: 80px 25px;
+    text-align: center;
+}
+.time_zone{
+    margin-left: 30rpx;
+    font-size: 26rpx;
+    color: #999999;
+}
+
+.border_tab{
+    height:5px;
+}
+

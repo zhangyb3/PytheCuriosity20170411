@@ -1,0 +1,24 @@
+
+
+.personal_like_page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+}
+
+.list_bottom{
+  height: 10px;
+  background-color: #F5F5F5;
+}
+
+@import "../common/personal_like_section_selector.wxss";
+@import "../listView/personal_like_answer_list.wxss";
+@import "../listView/personal_like_teacher_list.wxss";
+@import "../pop/show_image_page.wxss";
+@import "../bubble/bubble.wxss";

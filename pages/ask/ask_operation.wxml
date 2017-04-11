@@ -1,0 +1,142 @@
+
+<import src="../section/operation_take_photo.wxml" />
+<import src="../section/operation_record_sound.wxml" />
+<import src="../section/operation_draw_picture.wxml" />
+
+<import src="../pop/show_image_page.wxml" />
+<view class="show_image_page_container" hidden='{{hide_show_image_page}}'>
+        <template is="show_image_page" data="{{img_src}}"></template>
+</view>
+
+<view class="ask_operation_view"  data-item='{{ ask_item }}'>
+    
+       <view class="input_select_view" >
+        <input class="input_content" type="text" placeholder="选择您的科目是:" bindinput="selectSubject" ></input>
+    </view>
+        
+        <!--<view class="border_tab"></view>
+
+        
+        <view class="border_tab"></view>-->
+
+        <view class="ask_container" >
+            
+            
+            <view class="border_tab"></view>
+
+            <view class="ask_content_zone" hidden='{{hide_textarea}}'>
+                <textarea class="ask_content_text_input" bindinput="getQuestionText" placeholder="请输入问题..."    placeholder-style="color:#C9C9C9" placeholder-style="font-size:28rpx"/>
+            </view>
+
+            <view class="border_tab"></view>
+
+        </view>
+
+        <view class="multi_tips">
+            <view wx:if="{{ask_question.voice_path != null}}" class="voice" >
+                
+                <view class="bubble" data-question_voice='{{ask_question.voice_path}}' bindtap="playQuestionVoiceRecord">
+                    <view class="bubble-tail"></view>
+                    <view class="voice-wave"></view>
+                    <view>{{ask_question.voice_timeLength}}秒</view>
+                </view>
+
+            </view>
+
+            <view wx:if="{{ask_question.photo_path != null}}" class="photo" >
+                <view class="bubble-photo" data-question_photo='{{ask_question.photo_path}}' bindtap="showPhoto">
+                    <view>照片</view>
+                </view>
+            </view>
+
+            <view wx:if="{{ask_question.draw_path != null}}" class="draw" >
+                <view class="bubble-draw" data-question_photo='{{ask_question.draw_path}}' bindtap="showDraw">
+                    <view>手绘</view>
+                </view>
+            </view>
+
+        </view>
+
+
+        <view class="ask_operation_zone" >
+
+        <view class="record_sound" bindtap="recordSound">
+        <image class="record_sound_image" src="../../images/question_icon_record@2x.png"></image>
+        <text class="record_sound_text" >录音</text>
+        </view>
+
+        <view class="take_photo" bindtap="takePhoto">
+        <image class="take_photo_image" src="../../images/question_icon_pic@2x.png"></image>
+        <text class="record_sound_text" >拍照</text>
+        </view>
+
+        <view class="draw_picture" bindtap="drawPicture">
+        <image class="draw_picture_image" src="../../images/question_icon_huaban@2x.png"></image>
+        <text class="record_sound_text" >画板</text>
+        </view>
+
+            <!--<text class='record_sound' bindtap='recordSound'>录音
+            </text>-->
+            <!--<text class="take_photo" bindtap="takePhoto">拍照
+            </text>-->
+            <!--<text class="draw_picture" bindtap='drawPicture'>画板
+            </text>-->
+        </view>
+<view class="border_tab"></view>
+<view class="border_tab"></view>
+        <view class="record_sound_section_container" hidden='{{hide_record_sound_section}}'>
+             <template is="operation_record_sound_section" data='{{isSpeaking,loop,voices}}'></template>
+        </view>
+
+        <view class="take_photo_section_container" hidden='{{hide_take_photo_section}}'>
+             <template is="operation_take_photo_section" ></template>
+        </view>
+
+        <view class="draw_picture_section_container" hidden='{{hide_draw_picture_section}}'>
+             <template is="operation_draw_picture_section" data='{{pen}}'></template>
+        </view>
+
+        <view class="subject_container" wx:if="{{ask_question.not_select_subject == true}}">
+            <text class="subject_hint"> 科目: </text>
+            <picker mode="selector" bindchange="subjectChange" value="{{subject_index}}" range="{{subjectRange}}" class="subject_picker_wrap">
+                <view class="subject_picker">
+                    {{subjectRange[subject_index]}}
+                </view>
+            </picker>
+        </view>
+        <view class="reward_number_text_comtain">
+        <text class="reward_number_text">
+        请选择悬赏金额
+        </text>
+        </view>
+        <view class="reward_number_container">
+        <view class="reward_1" bindtap="selectReward1">
+            <image class="reward_img" src="../../images/question_icon_one_nor@2x.png"></image>
+        </view>
+        <view class="reward_5" bindtap="selectReward5">
+            <image class="reward_img" src="../../images/question_icon_five_nor@2x.png"></image>
+        </view>
+        <view class="reward_10" bindtap="selectReward10">
+            <image class="reward_img" src="../../images/question_icon_ten_nor@2x.png"></image>
+        </view>
+    </view>
+
+        <!--<view class="border_tab"></view>-->
+
+        <view class="ask_commit_confirm">
+            <button style="color:#FFFFFF" class="ask_commit_button" bindtap="commitQuestion">
+                发布
+            </button>
+        </view>
+
+
+        
+
+        
+
+
+    </view>
+
+    
+
+    

@@ -1,0 +1,25 @@
+<template name="ask_subject_list_item">
+<view class="list-item" style="background-color:white" data-item='{{ item }}' data-index='{{index}}' bindtap="selectOneSubject">
+
+            
+            
+            <!--<view class="dotted_line"></view>-->
+            <view class="subject_wrapper">
+                <image class="subject_icon" src="../../images/icon_language@2x.png"
+                ></image>
+                <text class="subject_content">{{ item.subject_name }}</text>
+                <text class="subject_discribe">研究数量、结构</text>
+                <image class="subject_icon_ask" src="../../images/icon_question_1@2x.png"
+                ></image>
+            </view>
+            <view class="border_tab"/>
+
+            
+            
+            <!--<view class="dotted_line"></view>-->
+            <!--<view class="border_tab"/>-->
+      
+        
+</view>
+
+</template>

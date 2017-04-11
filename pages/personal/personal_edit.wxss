@@ -1,0 +1,97 @@
+/* pages/personal/personal_edit.wxss */
+
+.nickname_zone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: center;*/
+    width: auto;
+    height: 50px;
+    margin-top: 70rpx;
+    margin-left: 14rpx;
+}
+
+.nickname_wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    width: auto;
+    height: auto;
+}
+
+.nickname_content_text_input{
+    height: 30px;
+    width: 75%;
+    
+    /*border-style: solid;
+    border-width: 1px;*/
+    
+    border-bottom: 1px solid #CCCCCC;
+    /*font-family: 黑体;*/
+    color: #0B0B0B;
+    /*border-radius: 22px;*/
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    /*justify-content: space-around;*/
+    align-items: center;
+    
+    /*margin:2px 5px;*/
+    text-align: center;
+    
+    background-color: white;
+    background-size: 18px 18px;
+    background-position: center left 10px;
+    font-size: 15px;
+
+}
+
+.description_content_zone{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30rpx;
+    margin-top: 70rpx;
+    align-items: center;
+}
+
+.description_content_text_input {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #CCCCCC;
+    height: 150px;
+    font-size: 16px;
+    overflow-x: auto; 
+    overflow-y: visible;
+    color: #333333;
+    margin-right: 30rpx;
+
+    margin-top: 36rpx;
+    border-radius: 10rpx;
+}
+
+.edit_commit_confirm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.edit_commit_button{
+    width: 80%;
+    line-height: 30px;
+    margin-top: 50px;
+    -webkit-text-fill-color: #ffffff;
+    font-size: 30rpx;
+    background-color: #3AA4F1;
+}
+
+.title_wrap{
+    width: 100%;
+    height: auto;
+}
+.title{
+    color: #333333;
+    font-size: 30rpx;
+    width: 130rpx;
+    text-align: left;
+}

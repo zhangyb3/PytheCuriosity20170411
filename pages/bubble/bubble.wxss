@@ -1,0 +1,95 @@
+
+
+.voice{
+    display:inline-block;
+    position: relative;
+}
+
+.photo{
+    display:inline-block;
+}
+
+.multi_tips{
+    display: flex;
+    flex-direction: row;
+}
+
+.bubble{
+    float: none;
+    display: block;
+    /*background-color: #1ccda6;*/
+    background-color: #28aef5;
+    line-height: 30px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 6rem;
+    color: black;
+    font-size: .8rem;
+    text-decoration: none;
+    position: relative;
+    margin-right: .35rem;
+    margin-left: .35rem;
+    margin-top: 5px;
+}
+
+.bubble-blue {
+    background: #28aef5;
+}
+
+.bubble-tail {
+    width: .83rem;
+    height: 1.185rem;
+    position: absolute;
+    bottom: 0px;
+    left: -.3rem;
+    background-image: url('/images/bubble-tail-blue.png');
+    background-size: .83rem 1.185rem;
+}
+
+.voice-wave {
+    display: block;
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    background-image: url('/images/bubble-wave.png');
+    background-size: .8rem;
+    top: .65rem;
+    left: .65rem;
+}
+
+.bubble-photo{
+    float: none;
+    display: block;
+    background-image: url('/images/bubble-frame.png');
+    background-color: lightblue;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    min-width: 6rem;
+    color: black;
+    font-size: .8rem;
+    text-decoration: none;
+    position: relative;
+    margin-right: .35rem;
+    margin-left: .35rem;
+    margin-top: 5px;
+}
+
+.bubble-draw{
+    float: none;
+    display: block;
+    background-image: url('/images/bubble-frame.png');
+    background-color: palegreen;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    min-width: 6rem;
+    color: black;
+    font-size: .8rem;
+    text-decoration: none;
+    position: relative;
+    margin-right: .35rem;
+    margin-left: .35rem;
+    margin-top: 5px;
+}

@@ -1,0 +1,21 @@
+
+.scroll_list{
+    margin-top: 10px;
+    
+}
+
+.interval{
+    margin-top: 20rpx;
+    background-color: #F5F5F5;
+}
+    
+.answer_page_list_container{
+    background-color: #F5F5F5;
+}
+
+
+
+
+@import "../common/answer_page_filter_sort.wxss";
+@import "../common/answer_page_list_item.wxss";
+

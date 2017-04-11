@@ -1,0 +1,200 @@
+/* pages/personal/personal.wxss */
+
+.personal_page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+}
+
+.personal_description_zone{
+    /*border-color: gray;*/
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    border-top: 1px solid #EEE;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    /*justify-content: space-around;*/
+    align-items: center;
+    height: 202rpx;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.personal_description_image_zone{
+    height: 100%;
+    width: 20%;
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
+    /*align-content: center;*/
+    position: relative;
+}
+
+.personal_avatar_container{
+    width: 88rpx;
+    height: 88rpx;
+    margin: auto;
+    
+}
+
+.personal_avartar_image{
+    margin-top: 50rpx;
+    width: 100%;
+    height: 100%;
+    border-radius: 44rpx;
+
+}
+
+.personal_description_text_zone{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.personal_nick_name{
+    margin-top: 54rpx;
+    font-size: 28rpx;
+    color: #333333;
+}
+
+.personal_summary_wrap{
+    height:20px;
+    display:flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height:20px;
+}
+.personal_summary_wrap image{
+    width:43rpx;
+    height: 38rpx;
+    display:block;
+    margin-right:5px;
+}
+
+.personal_summary{
+    /*margin-top: 15px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    background:url(../../images/icon_money_1@2x.png) no-repeat left center;*/
+    color: #FF9635;
+    /*background-size:20px 20px;
+    line-height:20px;*/
+    font-size: 16px;
+}
+
+.person_edit_icon_view{
+    height: 5%;
+    color: black;
+    margin-right:0px;
+    /*width: 300rpx;*/
+    /*background-color: white;*/
+}
+
+.person_edit_icon{
+    /*background: url(../../images/icon_information@2x.png) no-repeat center center;*/
+    position: absolute;
+    /*padding: 0px;*/
+    right: 0px;
+    /*padding-right: 10;*/
+    bottom: 5rpx;
+    height: 80rpx;
+    width: 80rpx;
+    background: none;
+    /*display: block;*/
+    /*background-size: 20px 20px;*/
+}
+
+.person_edit_icon image{
+    position: absolute;
+    /*left: 0px;*/
+    right: 0px;
+    height: 45rpx;
+    width: 44rpx;
+    display:block;
+}
+
+/*去掉button的边框*/
+.person_edit_icon:after{
+    border:none;
+}
+
+.personal_description_revise_zone{
+    height: 100%;
+    width: 5%;
+
+    align-items: center;
+}
+
+.personal_operation_zone{
+    margin-top: 10px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.personal_operation_item{
+    /*width: 100%;*/
+    display: flex;
+    flex-direction: row;
+    /*justify-content: flex-end;*/
+    line-height: 94rpx;
+    width: 95%;
+    margin-left: 40rpx;
+    border-bottom: 1px solid #EEE;
+    border-width: 1px;
+    margin-right: 20rpx;
+    /*background:url(../../images/icon_more@2x.png) no-repeat right center;*/
+
+}
+
+.personal_operation_item image{
+    margin-top: 40rpx;
+    margin-right: 30rpx;
+    /*right: 30rpx;*/
+    width: 13rpx;
+    height: 25rpx;
+}
+
+.personal_ask personal_operation_item{
+    /*padding-right: 10px;*/
+    /*background:url(../../images/icon_money_1@2x.png) no-repeat center;
+    background-size: 25px 25px;*/
+    background: black;
+}
+
+.personal_operation_item_text{
+    width: 96%;
+    line-height: 94rpx;
+    font-size: 30rpx;
+    color: #333333;
+    text-align: left;
+    
+}
+
+.about_us_zone{
+    margin-top: 10px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+}
+
+@import "../register/register.wxss";
+    
+
